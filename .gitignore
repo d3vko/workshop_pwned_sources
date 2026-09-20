@@ -1,0 +1,34 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Generated workshop outputs (keep .gitkeep)
+data/processed/*
+!data/processed/.gitkeep
+maps/*
+!maps/.gitkeep
+
+# Local notebooks / secrets
+*.ipynb_checkpoints/
+.env
+.env.*

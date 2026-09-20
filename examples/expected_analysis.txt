@@ -1,0 +1,61 @@
+Wireless Dataset Summary
+========================
+
+Observations: 96
+Unique BSSIDs: 32
+Unique SSIDs: 17
+Hidden SSIDs: 1
+GPS observations: 89
+
+Security:
+WPA2: 46
+WPA3: 14
+OPEN: 22
+WPA: 2
+WEP: 2
+UNKNOWN: 10
+
+Top Channels:
+  6: 22
+  1: 21
+  11: 21
+  48: 8
+  149: 6
+  40: 5
+  44: 5
+  153: 5
+  36: 3
+
+Strongest Observation:
+SSID: LAB-OFFICE
+BSSID: 02:03:00:00:00:05
+RSSI: -30.0
+Channel: 1
+Weakest RSSI: -90.0
+
+Most Observed BSSIDs:
+  02:01:00:00:00:01: 3
+  02:01:00:00:00:02: 3
+  02:01:00:00:00:03: 3
+  02:01:00:00:00:04: 3
+  02:01:00:00:00:05: 3
+  02:01:00:00:00:06: 3
+  02:01:00:00:00:07: 3
+  02:01:00:00:00:08: 3
+  02:02:00:00:00:01: 3
+  02:02:00:00:00:02: 3
+
+SSIDs with Multiple BSSIDs:
+  <hidden>: 12 BSSIDs
+  LAB-GUEST: 7 BSSIDs
+  LAB-GAMMA: 7 BSSIDs
+  LAB-LABORATORY: 7 BSSIDs
+  LAB-ALPHA: 6 BSSIDs
+  LAB-FOXTROT: 6 BSSIDs
+  LAB-BETA: 6 BSSIDs
+  LAB-MESH-A: 6 BSSIDs
+  LAB-DELTA: 5 BSSIDs
+  LAB-IOT: 5 BSSIDs
+
+BSSID with Most Distinct Locations:
+  02:01:00:00:00:01: 3 locations

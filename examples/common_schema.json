@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-20T10:01:02Z",
+  "source": "marauder",
+  "ssid": "LAB-ALPHA",
+  "bssid": "02:00:00:00:01:01",
+  "channel": 1,
+  "frequency": 2412,
+  "rssi": -42,
+  "security": "WPA2",
+  "latitude": 1.2345678,
+  "longitude": -9.8765432
+}
