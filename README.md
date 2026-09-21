@@ -178,7 +178,7 @@ Ejemplo: `examples/common_schema.json`.
 | `validate_dataset.py` | Valida esquema; sale ≠0 si falla |
 | `analyze.py` | Resumen de investigación (`--top N`, `--json`) |
 | `export_geojson.py` | FeatureCollection; coords `[lon, lat]`; omite filas sin GPS |
-| `build_map.py` | Mapa HTML local con Folium + MarkerCluster |
+| `build_map.py` | Mapa HTML local con Folium + MarkerCluster (teselas del servidor del taller, sin API keys) |
 
 Ayuda: `python scripts/<script>.py --help`.
 

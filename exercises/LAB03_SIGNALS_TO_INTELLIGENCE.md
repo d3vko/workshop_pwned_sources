@@ -39,7 +39,7 @@ Recuerda: en GeoJSON las coordenadas son `[longitud, latitud]`.
 python scripts/build_map.py data/processed/networks.csv maps/networks.html
 ```
 
-Abre `maps/networks.html` en el navegador (sin necesidad de API keys).
+Abre `maps/networks.html` en el navegador (sin necesidad de API keys). El mapa base usa el servidor de teselas del taller (`wardriving-ctf.rf-village-mx.com`) en lugar de `tile.openstreetmap.org`, que bloquea teselas (403) al abrir el HTML local.
 
 ## Discusión
 

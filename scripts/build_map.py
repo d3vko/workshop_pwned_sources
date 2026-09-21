@@ -51,7 +51,13 @@ def build_map(input_path: Path, output_path: Path) -> int:
     center_lat = float(geo["latitude"].mean())
     center_lon = float(geo["longitude"].mean())
 
-    fmap = folium.Map(location=[center_lat, center_lon], zoom_start=14)
+    # tile.openstreetmap.org blocks heavy/local file usage (403); use the workshop tile server.
+    fmap = folium.Map(location=[center_lat, center_lon], zoom_start=14, tiles=None)
+    folium.TileLayer(
+        tiles="https://wardriving-ctf.rf-village-mx.com/map-tiles/{z}/{x}/{y}.png",
+        attr="Wardriving CTF - RF Village MX",
+        name="CTF",
+    ).add_to(fmap)
     cluster = MarkerCluster().add_to(fmap)
 
     for _, row in geo.iterrows():
@@ -68,6 +74,8 @@ def build_map(input_path: Path, output_path: Path) -> int:
             popup=folium.Popup(popup, max_width=280),
             tooltip=str(row.get("ssid", "")),
         ).add_to(cluster)
+
+    folium.LayerControl().add_to(fmap)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fmap.save(str(output_path))
